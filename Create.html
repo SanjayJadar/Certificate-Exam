@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        #create-bg{
+            opacity: 0.6;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            position: absolute;
+        }
+        input{
+            padding: 5px 100px 5px 20px;
+            font-size: 20px; 
+            margin-left: 200px;
+            margin-top: 10px;
+            border: 2px solid rgb(20, 12, 2);
+            background: none; 
+        }
+        fieldset{
+            margin: 10px 350px 0 350px;
+            border: 2px solid rgb(122, 19, 19);
+        }
+        legend{
+            text-align: center; 
+        }
+        #submit{
+            border-radius: 5px;
+            font-size: 24px;
+            padding:  10px 15px;
+            margin-left: 320px;
+            margin-bottom: 10px;
+            background-color: blueviolet;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        #submit:hover{
+            font-size: 26px;
+            padding: 11px 16px;
+            margin-bottom: 6px;
+            margin-left: 315px;
+        }
+    </style>
+</head>
+<body>
+    <img id="create-bg" src="https://www.businessupturn.com/wp-content/uploads/2020/08/SwarnaS-10.jpg" alt="">
+    <fieldset>
+        <legend><h1>Create Your Own Team</h1></legend>
+        <input id="name" name="name" type="text" placeholder="Enter Team Name"><br><br><br><br>
+        <input id="url" name="url" type="text" placeholder="Enter Team Logo Url"><br><br><br><br>
+        <input id="count" name="count" type="text" placeholder="Enter Player Count"><br><br><br><br>
+        <input id="batsman" name="batsman" type="text" placeholder="Enter Top Batsman"><br><br><br><br>
+        <input id="bowler" name="bowler" type="text" placeholder="Enter Top Bowler"><br><br><br><br>
+        <input id="won" name="won" type="text" placeholder="Championship Won Count"><br><br><br><br>
+        <button onclick="saveData()" id="submit">Create</button>
+    </fieldset>
+    <script src="Create.js"></script>
+</body>
+</html>
